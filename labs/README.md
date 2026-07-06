@@ -1,22 +1,20 @@
-# Labs Index
+# CLSSYB Lab Index
 
-Complete the labs in order. Each lab builds part of a Yellow Belt improvement project and contributes to the final A3 summary.
+Complete the labs in order. The labs build a single Yellow Belt improvement package for the Contoso Service Desk case study.
 
-| Lab | Title |
-| --- | --- |
-| [Lab 01](lab-01-yellow-belt-foundations-project-scope.md) | Yellow Belt Foundations and Project Scope |
-| [Lab 02](lab-02-sipoc-process-map-waste-walk.md) | SIPOC, Process Map, and Waste Walk |
-| [Lab 03](lab-03-stakeholders-facilitation-kaizen.md) | Stakeholders, Facilitation, and Kaizen |
-| [Lab 04](lab-04-kpis-data-collection-visuals.md) | KPIs, Data Collection, and Visuals |
-| [Lab 05](lab-05-basic-statistics-performance-metrics.md) | Basic Statistics and Performance Metrics |
-| [Lab 06](lab-06-root-cause-5-whys-fishbone-fmea.md) | Root Cause, 5 Whys, Fishbone, and FMEA |
-| [Lab 07](lab-07-countermeasures-5s-pokayoke-standard-work.md) | Countermeasures, 5S, Poka-Yoke, and Standard Work |
-| [Lab 08](lab-08-control-plan-a3-project-close.md) | Control Plan, A3, and Project Close |
+| Lab | Title | Primary skill |
+|-----|-------|---------------|
+| 1 | [Yellow Belt Role, Certification Paths, and Improvement Scenario](lab-01-yellow-belt-role-certification-scenario.md) | Yellow Belt role and readiness |
+| 2 | [Lean, Six Sigma, Waste, Voice of Customer, and Value](lab-02-lean-six-sigma-waste-voc-value.md) | Lean Six Sigma foundations |
+| 3 | [SIPOC, Process Mapping, Handoffs, and Yellow Belt SME Support](lab-03-sipoc-process-map-handoffs.md) | Process mapping |
+| 4 | [PDCA Small Improvement Project Charter](lab-04-pdca-small-improvement-charter.md) | PDCA improvement |
+| 5 | [DMAIC Overview, Problem Statement, Scope, and Stakeholders](lab-05-dmaic-define-scope-stakeholders.md) | DMAIC Define support |
+| 6 | [Data Collection, KPIs, Check Sheets, and Basic Metrics](lab-06-data-collection-kpis-check-sheets.md) | Measurement planning |
+| 7 | [Pareto, Run Charts, Variation, Yield, DPU, and DPMO](lab-07-pareto-run-chart-variation-yield.md) | Basic analysis |
+| 8 | [Root Cause Analysis with 5 Whys, Fishbone, and Evidence](lab-08-root-cause-5-whys-fishbone.md) | Root cause support |
+| 9 | [Countermeasures, 5S, Mistake Proofing, Standard Work, and Kaizen](lab-09-countermeasures-5s-pokayoke-standard-work.md) | Improve tools |
+| 10 | [Control Plan, A3 Summary, Handover, and Certification Readiness](lab-10-control-plan-a3-certification-readiness.md) | Control and readiness |
 
-## Lab Rules
+## Recommended tools
 
-1. Use one simple process across all labs.
-2. Keep facts, assumptions, and conclusions separate.
-3. Do not jump to countermeasures before checking causes.
-4. Save every artifact for the final A3 presentation.
-5. Escalate complex statistical work to a Green Belt or Black Belt.
+See [tools.md](tools.md) for templates, spreadsheet formulas, and free tools.
