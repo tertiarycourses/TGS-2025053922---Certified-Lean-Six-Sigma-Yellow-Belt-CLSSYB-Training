@@ -1,12 +1,12 @@
 # TGS-2025053922 - Certified Lean Six Sigma Yellow Belt (CLSSYB) Training
 
-> **Course:** WSQ - Certified Lean Six Sigma Yellow Belt (CLSSYB) Training
-> **Course Code:** TGS-2025053922
+> **Course:** WSQ - Certified Lean Six Sigma Yellow Belt (CLSSYB) Training  
+> **Course Code:** TGS-2025053922  
 > **Register here:** https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-yellow-belt-clssyb-training.html
 
 These are the hands-on lab exercises for the WSQ Certified Lean Six Sigma Yellow Belt (CLSSYB) Training course delivered by [Tertiary Infotech Academy Pte Ltd](https://www.tertiarycourses.com.sg/).
 
-This repository contains **10 guided Lean Six Sigma Yellow Belt labs** aligned to the Council for Six Sigma Certification (CSSC) Yellow Belt role: basic Lean Six Sigma knowledge, process mapping, project team participation, subject matter expert support, and smaller PDCA improvement activities.
+This repository contains **14 guided Lean Six Sigma Yellow Belt labs** (9 core and 5 elective), structured around the **DMAIC roadmap** and grounded in the Council for Six Sigma Certification (CSSC) Yellow Belt body of knowledge.
 
 ---
 
@@ -14,62 +14,99 @@ This repository contains **10 guided Lean Six Sigma Yellow Belt labs** aligned t
 
 | Artifact | File |
 |----------|------|
-| **Learner Guide (Markdown)** | [LG-Certified-Lean-Six-Sigma-Yellow-Belt-CLSSYB-Training.md](LG-Certified-Lean-Six-Sigma-Yellow-Belt-CLSSYB-Training.md) |
+| **Slide deck** | `courseware/Certified Lean Six Sigma Yellow Belt (CLSSYB) Training-v4.pptx` (and `.pdf`) |
+| **Learner Guide (Markdown)** | [LG-Certified Lean Six Sigma Yellow Belt (CLSSYB) Training.md](LG-Certified%20Lean%20Six%20Sigma%20Yellow%20Belt%20%28CLSSYB%29%20Training.md) |
+| **Learner Guide (DOCX/PDF)** | `courseware/LG-Certified Lean Six Sigma Yellow Belt (CLSSYB) Training.docx` (and `.pdf`) |
+| **Lesson Plan (DOCX/PDF)** | `courseware/LP-Certified Lean Six Sigma Yellow Belt (CLSSYB) Training.docx` (and `.pdf`) |
 | **Lab Index** | [labs/README.md](labs/README.md) |
 | **Tools and Templates** | [labs/tools.md](labs/tools.md) |
 
-> **Note:** assessment answers, scoring rubrics, and trainer-only materials are intentionally not published in this repository.
+> **Note:** assessment papers, answer keys and trainer-only materials are intentionally not published in this repository.
 
 ---
 
 ## How to use
 
-1. Read the learner guide first to understand the Yellow Belt role, certification pathways, PDCA, and DMAIC support responsibilities.
-2. Complete the labs in order using a simple workplace process or the provided Contoso service desk case study.
-3. Keep each worksheet because the final lab combines them into a Yellow Belt improvement summary.
-4. Use spreadsheets, diagrams.net, paper templates, or whiteboards as directed by the trainer.
-5. Review the checkpoint questions at the end of each lab before moving on.
+1. Read the Learner Guide first — it follows the same DMAIC order as the course.
+2. Complete the core labs in order using the Contoso Service Desk scenario.
+3. Complete the elective labs if time allows, or as post-course practice.
+4. Keep every worksheet — the final lab combines them into one improvement package.
+5. Review the 'Check your work' step at the end of each lab before moving on.
 
 ---
 
 ## Lab catalogue
 
-### Foundations and certification context
+### Foundations — Six Sigma Foundations
 
-- [Lab 1 - Yellow Belt Role, Certification Paths, and Improvement Scenario](labs/lab-01-yellow-belt-role-certification-scenario.md)
-- [Lab 2 - Lean, Six Sigma, Waste, Voice of Customer, and Value](labs/lab-02-lean-six-sigma-waste-voc-value.md)
+- [Lab 1 - Yellow Belt Role, Certification Paths, and Improvement Scenario](labs/lab-01-yellow-belt-role-certification-paths-and-improvement-scenari.md)
 
-### Process understanding and PDCA
+### Define — Scope the Problem
 
-- [Lab 3 - SIPOC, Process Mapping, Handoffs, and Yellow Belt SME Support](labs/lab-03-sipoc-process-map-handoffs.md)
-- [Lab 4 - PDCA Small Improvement Project Charter](labs/lab-04-pdca-small-improvement-charter.md)
+- [Lab 2 - Lean, Six Sigma, Waste, Voice of Customer, and Value](labs/lab-02-lean-six-sigma-waste-voice-of-customer-and-value.md)
+- [Lab 3 - SIPOC, Process Mapping, Handoffs, and SME Support](labs/lab-03-sipoc-process-mapping-handoffs-and-sme-support.md)
+- [Lab 4 - PDCA Small Improvement Project Charter](labs/lab-04-pdca-small-improvement-project-charter.md) *(elective)*
+- [Lab 5 - DMAIC Overview, Problem Statement, Scope, and Stakeholders](labs/lab-05-dmaic-overview-problem-statement-scope-and-stakeholders.md)
+- [Lab 11 - Affinity Diagram and Kano Analysis](labs/lab-11-affinity-diagram-and-kano-analysis.md) *(elective)*
 
-### DMAIC support and data
+### Measure — Quantify Performance
 
-- [Lab 5 - DMAIC Overview, Problem Statement, Scope, and Stakeholders](labs/lab-05-dmaic-define-scope-stakeholders.md)
-- [Lab 6 - Data Collection, KPIs, Check Sheets, and Basic Metrics](labs/lab-06-data-collection-kpis-check-sheets.md)
-- [Lab 7 - Pareto, Run Charts, Variation, Yield, DPU, and DPMO](labs/lab-07-pareto-run-chart-variation-yield.md)
+- [Lab 6 - Data Collection, KPIs, Check Sheets, and Basic Metrics](labs/lab-06-data-collection-kpis-check-sheets-and-basic-metrics.md)
+- [Lab 12 - Value Stream Map and Takt Time](labs/lab-12-value-stream-map-and-takt-time.md) *(elective)*
 
-### Root cause, improvement, and control
+### Analyze — Find the Root Cause
 
-- [Lab 8 - Root Cause Analysis with 5 Whys, Fishbone, and Evidence](labs/lab-08-root-cause-5-whys-fishbone.md)
-- [Lab 9 - Countermeasures, 5S, Mistake Proofing, Standard Work, and Kaizen](labs/lab-09-countermeasures-5s-pokayoke-standard-work.md)
-- [Lab 10 - Control Plan, A3 Summary, Handover, and Certification Readiness](labs/lab-10-control-plan-a3-certification-readiness.md)
+- [Lab 7 - Pareto, Run Charts, Variation, Yield, DPU, and DPMO](labs/lab-07-pareto-run-charts-variation-yield-dpu-and-dpmo.md)
+- [Lab 8 - Root Cause Analysis with 5 Whys, Fishbone, and Evidence](labs/lab-08-root-cause-analysis-with-5-whys-fishbone-and-evidence.md)
+
+### Improve — Fix the Cause
+
+- [Lab 9 - Countermeasures, 5S, Mistake Proofing, Standard Work, and Kaizen](labs/lab-09-countermeasures-5s-mistake-proofing-standard-work-and-kaizen.md)
+- [Lab 13 - Solution Selection Matrix, Benchmarking, and FMEA](labs/lab-13-solution-selection-matrix-benchmarking-and-fmea.md) *(elective)*
+
+### Control — Hold the Gain
+
+- [Lab 10 - Control Plan, A3 Summary, Handover, and Certification Readiness](labs/lab-10-control-plan-a3-summary-handover-and-certification-readiness.md)
+- [Lab 14 - Descriptive Statistics and Implementation Planning](labs/lab-14-descriptive-statistics-and-implementation-planning.md) *(elective)*
 
 ---
+
+## Repository structure
+
+```
+courseware/          slide deck (PPTX + PDF), Learner Guide, Lesson Plan
+  archive/           superseded deck versions
+  assets/            diagrams and images used by the deck
+labs/                the 14 lab worksheets + index + toolkit
+LG-Certified Lean Six Sigma Yellow Belt (CLSSYB) Training.md
+                     Learner Guide (Markdown mirror of the DOCX)
+.claude/skills/courseware-build/build/
+                     single-source generators: one content module
+                     drives the deck, LP, LG and labs
+```
+
+All artifacts are generated from `course_data.py` + `data_domainN.py`, so the deck, Lesson Plan, Learner Guide and labs stay 100% aligned.
+
+## Interactive tools
+
+- [5 Whys](https://alfredang.github.io/5whys/) — root-cause chain builder
+- [Fishbone Diagram](https://alfredang.github.io/fishbone/) — Ishikawa cause-and-effect builder
+- [Pareto Chart](https://alfredang.github.io/paretochart/) — collaborative team brainstorm, vote and live chart
+- [NovaSPC](https://alfredang.github.io/novaspc/) — run charts, SPC charts and process capability
 
 ## Reference
 
 - [Council for Six Sigma Certification - Lean Six Sigma Yellow Belt Certification](https://www.sixsigmacouncil.org/lean-six-sigma-yellow-belt-certification/)
 - [Course registration page](https://www.tertiarycourses.com.sg/wsq-certified-lean-six-sigma-yellow-belt-clssyb-training.html)
-- [labs/tools.md](labs/tools.md) - Templates, spreadsheet formulas, and free tools used in the labs
-
----
+- [labs/tools.md](labs/tools.md) - templates, formulas and free tools used in the labs
 
 ## Free tools used
 
 - Microsoft Excel, LibreOffice Calc, or Google Sheets
-- Draw.io / diagrams.net for SIPOC, process maps, and fishbone diagrams
-- Paper or digital templates for check sheets, PDCA, A3, and control plans
+- Draw.io / diagrams.net for SIPOC, process maps and fishbone diagrams
+- The interactive tools listed above
 - Whiteboard or sticky notes for facilitation activities
-- Free online calculators where permitted by the trainer
+
+---
+
+*Version v4 · 19 July 2026 · © 2026 Tertiary Infotech Academy Pte Ltd*

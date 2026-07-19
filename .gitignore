@@ -1,0 +1,16 @@
+# Confidential — assessments and answer keys NEVER go to GitHub.
+# House standard: https://tertiarycourses.github.io/wsqcourseware/
+# They are distributed via Google Drive only (anyone-with-link viewer).
+assessment/
+reference/
+
+# Local scratch
+.DS_Store
+__pycache__/
+*.pyc
+
+# Distribution archives (rebuildable — never pushed to GitHub)
+*.zip
+
+# Playwright MCP scratch
+.playwright-mcp/
