@@ -1,6 +1,6 @@
 # Certified Lean Six Sigma Yellow Belt (CLSSYB) Training — Learner Guide
 
-**WSQ Course Code:** TGS-2025053922  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v4 · 19 July 2026**
+**WSQ Course Code:** TGS-2025053922  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v6 · 20 July 2026**
 
 ## Contents
 
@@ -82,8 +82,9 @@ This course is aligned to the WSQ Technical Skills and Competencies (TSC) Qualit
 
 **The interactive problem-solving toolkit**
 
-Four browser-based tools are used during the labs. No installation or licence is required.
+Five browser-based tools are used during the labs. No installation, licence or sign-up is required, and nothing you enter leaves your browser.
 
+- SIPOC & Process Map Builder — a guided SIPOC that enforces the 5-7 step rule, tags pain points, and generates the swimlane and handoff table from your actor assignments: https://alfredang.github.io/sipoc/
 - 5 Whys — build and share a 5 Whys chain: https://alfredang.github.io/5whys/
 - Fishbone Diagram — build an Ishikawa cause-and-effect diagram: https://alfredang.github.io/fishbone/
 - Pareto Chart (collaborative) — your team brainstorms and votes in one live session and the Pareto chart builds itself: https://alfredang.github.io/paretochart/
@@ -194,20 +195,25 @@ Goal: Build the macro 'as-is' view with SIPOC, then drill into a detailed proces
 
 **What you'll build**
 
-A completed SIPOC and a detailed process map with pain points marked.   (Tools and techniques: SIPOC, process flowchart, swimlane map, standard process symbols.)
+A completed SIPOC and a detailed process map with pain points marked.   (Tools and techniques: SIPOC & Process Map Builder, process flowchart, swimlane map, standard process symbols.)
 
 **Step-by-step**
 
 1. Set the process boundaries — agree the explicit start and stop points first.
-2. Build the SIPOC: Suppliers, Inputs, Process (5-7 high-level steps), Outputs, Customers.
+2. Build the SIPOC with the online builder: Suppliers, Inputs, Process (5-7 high-level steps), Outputs, Customers.
+
+   ```bash
+   https://alfredang.github.io/sipoc/
+   ```
+
 3. Expand into a detailed process map: Step, Actor, Activity, System, Handoff.
-4. Draw the same flow as a swimlane map so each actor's lane makes handoffs obvious.
-5. Mark pain points — delays, rework loops, unclear ownership and handoff risks.
+4. Assign an actor to each step — the tool generates the swimlane and detects every handoff for you.
+5. Tag pain points on the steps — waiting, rework loop, unclear ownership, duplicate entry or missing decision rule (at least three).
 6. Prepare SME notes for the Green Belt: what you observed and what needs validation.
 
 **Check your work**
 
-Your SIPOC has all five columns populated and every handoff on the detailed map has a named owner on both sides.
+Run 'Check my SIPOC' in the tool — all five columns populated, 5-7 steps, at least three pain points, and every handoff owned on both sides.
 
 > **Note:** The full worksheet for this lab is in labs/lab-03-*.md.
 
@@ -346,11 +352,16 @@ Goal: Extend process mapping into Lean metrics. Map the value stream with proces
 
 **What you'll build**
 
-A value stream map with lead time, process time and a calculated takt time.   (Tools and techniques: Value stream mapping, lead time, WIP, takt time, cycle efficiency.)
+A value stream map with lead time, process time and a calculated takt time.   (Tools and techniques: SIPOC & Process Map Builder, value stream mapping, lead time, WIP, takt time.)
 
 **Step-by-step**
 
-1. Map the value stream: each step with its process time and the wait time between steps.
+1. Map the value stream: each step with its process time and the wait time between steps. Start from your Lab 3 process map.
+
+   ```bash
+   https://alfredang.github.io/sipoc/
+   ```
+
 2. Total the value-added time and the lead time, then compute process cycle efficiency.
 3. Calculate takt time = available working time / customer demand.
 4. Compare cycle time against takt time to identify the bottleneck step.

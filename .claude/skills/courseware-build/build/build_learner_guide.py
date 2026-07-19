@@ -75,8 +75,10 @@ bullets([
  "A work process of your own to think about — the tools apply far better when the example is real.",
 ])
 h3("The interactive problem-solving toolkit")
-p("Four browser-based tools are used during the labs. No installation or licence is required.")
+p("Five browser-based tools are used during the labs. No installation, licence or sign-up is required, "
+  "and nothing you enter leaves your browser.")
 bullets([
+ "SIPOC & Process Map Builder — a guided SIPOC that enforces the 5-7 step rule, tags pain points, and generates the swimlane and handoff table from your actor assignments: https://alfredang.github.io/sipoc/",
  "5 Whys — build and share a 5 Whys chain: https://alfredang.github.io/5whys/",
  "Fishbone Diagram — build an Ishikawa cause-and-effect diagram: https://alfredang.github.io/fishbone/",
  "Pareto Chart (collaborative) — your team brainstorms and votes in one live session and the Pareto chart builds itself: https://alfredang.github.io/paretochart/",
@@ -266,6 +268,8 @@ prodoc.add_version_control(doc,[
   "Statistics/Implementation Plan) and Lab 4 (PDCA charter) reclassified as elective; interactive "
   "problem-solving tools (5 Whys, Fishbone, collaborative Pareto, NovaSPC) integrated into the "
   "Analyze labs; added quick-reference formulas, the eight wastes and an expanded glossary.",C.TRAINER),
+ ("5", C.VERSION_DATE, "Integrated the SIPOC & Process Map Builder (alfredang.github.io/sipoc/) into Lab 3 and elective Lab 12, with a tool walkthrough added to the Define phase and the online toolkit slide updated to list all five tools.", C.TRAINER),
+ ("6", C.VERSION_DATE, "Fixed clipped headings: slide titles now auto-fit to a single line so long lab titles can no longer overprint the LAB/ELECTIVE chips beneath them.", C.TRAINER),
 ])
 prodoc.add_toc(doc)
 

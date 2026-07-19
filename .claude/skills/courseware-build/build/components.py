@@ -165,11 +165,27 @@ class Deck:
                  [[(str(self.page), 9, GREY, False)]], align=PP_ALIGN.RIGHT)
 
     def head(self, s, title, kicker=None, kcolor=BLUE):
+        """Slide chrome: accent bar, kicker and title.
+
+        The title box is one line tall and everything below it (LAB chips,
+        panels) is positioned from a fixed y. So a long title MUST NOT wrap —
+        step the font down until it fits on one line instead, which keeps the
+        layout stable rather than pushing text through the elements beneath.
+        """
         self.rect(s, 0, 0, self.SW, self.SH, WHITE)
         self.rect(s, 0, 0, Inches(0.28), Inches(1.55), kcolor)
         if kicker:
             self.txt(s, Inches(0.85), Inches(0.5), Inches(11.6), Inches(0.4), [[(kicker, 14, kcolor, True)]])
-        self.txt(s, Inches(0.85), Inches(0.92), Inches(11.9), Inches(0.75), [[(title, 30, INK, True)]])
+        # ~0.52 em average advance for this face; 11.9in of usable width.
+        n = len(str(title))
+        size = 30
+        for candidate in (30, 27, 24, 22, 20):
+            if n <= int(11.9 * 72 / (candidate * 0.52)):
+                size = candidate
+                break
+        else:
+            size = 20
+        self.txt(s, Inches(0.85), Inches(0.92), Inches(11.9), Inches(0.75), [[(title, size, INK, True)]])
         return s
 
     # ---------------- base templates ----------------

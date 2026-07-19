@@ -44,6 +44,7 @@ FOLDERS = {
     "learner_guide": ("Learner Guide", "learner guide"),
     "lesson_plan": ("Lesson Plan", "lesson plan"),
     "assessment": ("Assessment", "assessment"),
+    "activities": ("Activities", "activit"),
 }
 
 
@@ -150,6 +151,21 @@ def collect_links(root):
     take("slidesUrl", "learner_guide", lambda n: pdf(n) and not is_learner_guide(n), "learner slides .pdf")
     take("learnerGuideUrl", "learner_guide", lambda n: pdf(n) and is_learner_guide(n), "learner guide .pdf")
     take("lessonPlanUrl", "lesson_plan", pdf, "lesson plan .pdf")
+
+    # Activities/labs are MANY files, so this field gets the FOLDER link, not a file link.
+    try:
+        act_dir = find_dir(root, *FOLDERS["activities"])
+        act_id = next((d["ID"] for d in rc(["lsjson", f"{REMOTE}:", "--dirs-only"], root, parse=True)
+                       if d["Name"] == act_dir), None)
+        n_files = len(files_in(root, act_dir))
+        if act_id and n_files:
+            rc(["link", f"{REMOTE}:{act_dir}"], root)   # anyone-with-link on the folder
+            out["activitiesUrl"] = (f"{act_dir}/ ({n_files} lab files)",
+                                    f"https://drive.google.com/drive/folders/{act_id}?usp=sharing")
+        else:
+            missing.append(f"{FIELD_LABELS['activitiesUrl']}: Activities folder empty or not found")
+    except SystemExit as e:
+        missing.append(f"{FIELD_LABELS['activitiesUrl']}: {e}")
 
     # ---- the assessment: QUESTION PAPERS ONLY. Answer keys are trainer-only and never
     # reach the LMS, so they are filtered out before anything is picked.
@@ -341,6 +357,7 @@ FIELD_LABELS = {
     "slidesUrl": "Learner Slides URL",
     "learnerGuideUrl": "Learner Guide URL",
     "lessonPlanUrl": "Lesson Plan URL",
+    "activitiesUrl": "Activities/Lab URL",
     "writtenAssessmentLink": "Written Assessment (question paper)",
     "caseStudyLink": "Case Study (question paper)",
     "practicalPerformanceAssessmentLink": "Practical Performance (question paper)",

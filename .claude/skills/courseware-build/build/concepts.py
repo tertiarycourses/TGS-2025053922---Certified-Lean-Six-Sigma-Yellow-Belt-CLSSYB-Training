@@ -296,6 +296,21 @@ def define_phase(d):
         ("Parallelogram — Data", "An input to, or output from, a step."),
         ("D shape — Delay", "Work waiting in a queue — usually where the waste is."),
     ], kicker="READING A PROCESS MAP", cols=2, size=14, accent=VIOLET)
+    d.tile_grid("Your SIPOC & Process Map Builder", [
+        ("Where", "alfredang.github.io/sipoc/ — no install, works in any browser."),
+        ("Guided order", "Enter Process → Outputs → Customers → Inputs → Suppliers, the way the method teaches."),
+        ("Enforces the rules", "Warns if you drift outside 5–7 steps, and tracks your pain-point count."),
+        ("Tag pain points", "Waiting, rework loop, unclear ownership, duplicate entry, missing decision rule."),
+        ("Swimlane for free", "Assign an actor to each step and the swimlane and handoff table build themselves."),
+        ("Check my SIPOC", "Validates the same rules your lab and assessment are marked against."),
+    ], kicker="DEFINE · YOUR ONLINE TOOL", cols=2, size=13, accent=TEAL)
+    d.flow_h("Using the SIPOC Builder in Lab 3", [
+        "Set the process name, start point and stop point",
+        "List the 5–7 process steps, then work outward to O, C, I, S",
+        "Tag at least three pain points on the steps",
+        "Assign an actor to each step — handoffs appear automatically",
+        "Run 'Check my SIPOC', then export the PNG for your package",
+    ], kicker="DEFINE · TOOL WALKTHROUGH", color=TEAL)
 
 
 # ============================================================ MEASURE
@@ -549,12 +564,14 @@ def analyze_phase(d):
         ("Vote independently", "Vote privately first so nobody anchors on the manager's choice."),
         ("Then verify", "The top-voted causes still have to be tested against the data."),
     ], kicker="ANALYZE · MULTI-VOTING", cols=2, size=15, accent=TEAL)
-    d.tile_grid("Interactive Problem-Solving Tools You Will Use", [
-        ("5 Whys", "Build and share the 5 Whys chain online — alfredang.github.io/5whys/"),
-        ("Fishbone Diagram", "Ishikawa cause-and-effect builder — alfredang.github.io/fishbone/"),
-        ("Pareto Chart (collaborative)", "Your team brainstorms and votes in one live session; the Pareto chart builds itself — alfredang.github.io/paretochart/"),
-        ("NovaSPC", "Run charts, SPC charts and process capability from your own CSV — alfredang.github.io/novaspc/"),
-    ], kicker="ANALYZE · YOUR ONLINE TOOLKIT", cols=2, size=13, accent=BLUE)
+    d.tile_grid("Your Complete Online Toolkit", [
+        ("SIPOC & Process Map", "Define — guided SIPOC, swimlane and handoffs — alfredang.github.io/sipoc/"),
+        ("5 Whys", "Analyze — build and share the 5 Whys chain — alfredang.github.io/5whys/"),
+        ("Fishbone Diagram", "Analyze — Ishikawa cause-and-effect builder — alfredang.github.io/fishbone/"),
+        ("Pareto Chart (collaborative)", "Analyze — your team brainstorms and votes in one live session; the chart builds itself — alfredang.github.io/paretochart/"),
+        ("NovaSPC", "Measure & Control — run charts, SPC charts and process capability from your CSV — alfredang.github.io/novaspc/"),
+        ("All free", "No install, no sign-up. Everything stays in your browser."),
+    ], kicker="YOUR ONLINE TOOLKIT · USED ACROSS DMAIC", cols=2, size=13, accent=BLUE)
     d.flow_h("Using the Collaborative Pareto Tool in Your Team", [
         "Facilitator creates a session and shares the access code",
         "Every team member joins with the code",

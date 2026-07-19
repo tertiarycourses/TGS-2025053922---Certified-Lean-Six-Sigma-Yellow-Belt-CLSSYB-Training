@@ -35,6 +35,7 @@ REPO = _find_repo(HERE)
 LABS = os.path.join(REPO, "labs")
 
 TOOLS = {
+    "sipoc": ("SIPOC & Process Map Builder", "https://alfredang.github.io/sipoc/"),
     "5whys": ("5 Whys", "https://alfredang.github.io/5whys/"),
     "fishbone": ("Fishbone Diagram", "https://alfredang.github.io/fishbone/"),
     "pareto": ("Pareto Chart (collaborative)", "https://alfredang.github.io/paretochart/"),
@@ -179,10 +180,20 @@ def tools_md():
     out.append("")
     out.append("| Tool | What it does | Used in |")
     out.append("|------|--------------|---------|")
+    out.append("| [SIPOC & Process Map](https://alfredang.github.io/sipoc/) | Guided SIPOC that enforces the 5-7 step rule, tags pain points, and generates the swimlane and handoff table from your actor assignments | Labs 3, 12 |")
     out.append("| [5 Whys](https://alfredang.github.io/5whys/) | Build and share a 5 Whys root-cause chain | Lab 8 |")
     out.append("| [Fishbone Diagram](https://alfredang.github.io/fishbone/) | Build an Ishikawa cause-and-effect diagram | Lab 8 |")
     out.append("| [Pareto Chart](https://alfredang.github.io/paretochart/) | Collaborative session: the team brainstorms and votes, and the Pareto chart builds itself live | Lab 7 |")
     out.append("| [NovaSPC](https://alfredang.github.io/novaspc/) | Run charts, SPC charts (c, u, np, p, X-mR, X̄-R, X̄-s) and process capability from your own CSV | Labs 7, 10 |")
+    out.append("")
+    out.append("### Using the SIPOC builder")
+    out.append("")
+    out.append("1. Set the process name, start point and stop point — the grid unlocks once boundaries are agreed.")
+    out.append("2. List the 5-7 process steps, then work outward: Outputs, Customers, Inputs, Suppliers.")
+    out.append("3. Click a process step to tag pain points (at least three) and assign the actor who performs it.")
+    out.append("4. Open the Swimlane tab — the lanes and every handoff are generated from your actor assignments.")
+    out.append("5. Fill in an owner on both sides of each handoff.")
+    out.append("6. Run **Check my SIPOC**, then export the PNG for your improvement package.")
     out.append("")
     out.append("### Using the collaborative Pareto tool")
     out.append("")
@@ -348,6 +359,7 @@ def repo_readme(files):
     out.append("")
     out.append("## Interactive tools")
     out.append("")
+    out.append("- [SIPOC & Process Map](https://alfredang.github.io/sipoc/) — guided SIPOC, swimlane and handoff table")
     out.append("- [5 Whys](https://alfredang.github.io/5whys/) — root-cause chain builder")
     out.append("- [Fishbone Diagram](https://alfredang.github.io/fishbone/) — Ishikawa cause-and-effect builder")
     out.append("- [Pareto Chart](https://alfredang.github.io/paretochart/) — collaborative team brainstorm, vote and live chart")

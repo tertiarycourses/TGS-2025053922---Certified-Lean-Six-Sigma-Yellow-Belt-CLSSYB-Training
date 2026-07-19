@@ -14,3 +14,7 @@ __pycache__/
 
 # Playwright MCP scratch
 .playwright-mcp/
+
+# Stray Playwright captures at repo root (course assets live in courseware/assets/)
+/sipoc-*.png
+/diag.png

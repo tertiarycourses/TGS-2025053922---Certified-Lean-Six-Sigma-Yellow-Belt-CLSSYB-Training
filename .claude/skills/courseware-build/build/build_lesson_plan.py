@@ -167,6 +167,8 @@ prodoc.add_version_control(doc,[
   "Descriptive Statistics/Implementation Plan) and Lab 4 (PDCA charter) reclassified as elective, giving "
   "9 core and 5 elective labs; interactive problem-solving tools (5 Whys, Fishbone, collaborative Pareto, "
   "NovaSPC) integrated into the Analyze labs; slide references added to the schedule.",C.TRAINER),
+ ("5", C.VERSION_DATE, "Integrated the SIPOC & Process Map Builder (alfredang.github.io/sipoc/) into Lab 3 and elective Lab 12, with a tool walkthrough added to the Define phase and the online toolkit slide updated to list all five tools.", C.TRAINER),
+ ("6", C.VERSION_DATE, "Fixed clipped headings: slide titles now auto-fit to a single line so long lab titles can no longer overprint the LAB/ELECTIVE chips beneath them.", C.TRAINER),
 ])
 prodoc.add_toc(doc)
 

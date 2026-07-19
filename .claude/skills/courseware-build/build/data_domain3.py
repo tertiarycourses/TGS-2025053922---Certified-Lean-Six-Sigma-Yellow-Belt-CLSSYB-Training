@@ -73,9 +73,10 @@ DOMAIN3 = [
              "wait times, calculate process cycle efficiency, then compute takt time to see "
              "whether the process can meet customer demand.",
         build="A value stream map with lead time, process time and a calculated takt time.",
-        services="Value stream mapping, lead time, WIP, takt time, cycle efficiency",
+        services="SIPOC & Process Map Builder, value stream mapping, lead time, WIP, takt time",
         steps=[
-            ("Map the value stream: each step with its process time and the wait time between steps.", ""),
+            ("Map the value stream: each step with its process time and the wait time between steps. Start from your Lab 3 process map.",
+             "https://alfredang.github.io/sipoc/"),
             ("Total the value-added time and the lead time, then compute process cycle efficiency.", ""),
             ("Calculate takt time = available working time / customer demand.", ""),
             ("Compare cycle time against takt time to identify the bottleneck step.", ""),

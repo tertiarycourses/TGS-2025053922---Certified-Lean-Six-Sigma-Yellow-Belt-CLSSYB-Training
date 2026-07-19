@@ -53,16 +53,17 @@ DOMAIN1 = [
              "that shows every actor, system and handoff — the points where delay and defects "
              "are actually created.",
         build="A completed SIPOC and a detailed process map with pain points marked.",
-        services="SIPOC, process flowchart, swimlane map, standard process symbols",
+        services="SIPOC & Process Map Builder, process flowchart, swimlane map, standard process symbols",
         steps=[
             ("Set the process boundaries — agree the explicit start and stop points first.", ""),
-            ("Build the SIPOC: Suppliers, Inputs, Process (5-7 high-level steps), Outputs, Customers.", ""),
+            ("Build the SIPOC with the online builder: Suppliers, Inputs, Process (5-7 high-level steps), Outputs, Customers.",
+             "https://alfredang.github.io/sipoc/"),
             ("Expand into a detailed process map: Step, Actor, Activity, System, Handoff.", ""),
-            ("Draw the same flow as a swimlane map so each actor's lane makes handoffs obvious.", ""),
-            ("Mark pain points — delays, rework loops, unclear ownership and handoff risks.", ""),
+            ("Assign an actor to each step — the tool generates the swimlane and detects every handoff for you.", ""),
+            ("Tag pain points on the steps — waiting, rework loop, unclear ownership, duplicate entry or missing decision rule (at least three).", ""),
             ("Prepare SME notes for the Green Belt: what you observed and what needs validation.", ""),
         ],
-        test="Your SIPOC has all five columns populated and every handoff on the detailed map has a named owner on both sides.",
+        test="Run 'Check my SIPOC' in the tool — all five columns populated, 5-7 steps, at least three pain points, and every handoff owned on both sides.",
     ),
     dict(
         num=4, topic=1, elective=True,
