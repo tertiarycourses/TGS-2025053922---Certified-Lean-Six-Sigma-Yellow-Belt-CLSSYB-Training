@@ -270,6 +270,7 @@ prodoc.add_version_control(doc,[
   "Analyze labs; added quick-reference formulas, the eight wastes and an expanded glossary.",C.TRAINER),
  ("5", C.VERSION_DATE, "Integrated the SIPOC & Process Map Builder (alfredang.github.io/sipoc/) into Lab 3 and elective Lab 12, with a tool walkthrough added to the Define phase and the online toolkit slide updated to list all five tools.", C.TRAINER),
  ("6", C.VERSION_DATE, "Fixed clipped headings: slide titles now auto-fit to a single line so long lab titles can no longer overprint the LAB/ELECTIVE chips beneath them.", C.TRAINER),
+ ("7", C.VERSION_DATE, "Table of contents restored to a live, updatable Word field (previously flattened to static text), so it refreshes on open or F9 while still rendering correctly in the distributed PDF.", C.TRAINER),
 ])
 prodoc.add_toc(doc)
 

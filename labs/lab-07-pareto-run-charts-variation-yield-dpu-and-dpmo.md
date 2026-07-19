@@ -69,4 +69,4 @@ Save your output — it forms part of your Contoso improvement package and is yo
 
 ---
 
-*Certified Lean Six Sigma Yellow Belt (CLSSYB) Training · TGS-2025053922 · Version v6 · © 2026 Tertiary Infotech Academy Pte Ltd*
+*Certified Lean Six Sigma Yellow Belt (CLSSYB) Training · TGS-2025053922 · Version v7 · © 2026 Tertiary Infotech Academy Pte Ltd*

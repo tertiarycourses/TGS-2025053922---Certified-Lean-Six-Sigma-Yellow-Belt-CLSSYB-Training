@@ -1,6 +1,6 @@
 # Certified Lean Six Sigma Yellow Belt (CLSSYB) Training — Learner Guide
 
-**WSQ Course Code:** TGS-2025053922  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v6 · 20 July 2026**
+**WSQ Course Code:** TGS-2025053922  |  **Conducted by:** Tertiary Infotech Academy Pte Ltd (UEN 201200696W)  |  **Version v7 · 20 July 2026**
 
 ## Contents
 

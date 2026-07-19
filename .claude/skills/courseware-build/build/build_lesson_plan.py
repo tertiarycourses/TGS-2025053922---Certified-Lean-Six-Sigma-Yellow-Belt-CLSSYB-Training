@@ -124,23 +124,23 @@ SCHEDULE = {
  1: ("Six Sigma foundations, Define phase and process mapping", [
     ("9:30","10:00",30,"admin","Welcome, course introduction, ground rules and mandatory digital attendance (AM)"+sl("Admin")),
     ("10:00","11:15",75,"topic","FOUNDATIONS — What is Quality; What is Lean; What is Six Sigma; Lean vs Six Sigma vs Lean Six Sigma; sigma levels and DPMO; Y = f(X); belt roles; the DMAIC roadmap; DMAIC vs PDCA"+sl("Foundations")),
-    ("11:15","11:30",15,"break","Tea break"),
+    ("11:15","11:30",15,"break","Tea break (within training time)"),
     ("11:30","12:30",60,"lab","Hands-on: "+lab_titles([1])+sll([1])),
     ("12:30","13:30",60,"lunch","Lunch break"),
     ("13:30","15:00",90,"topic","DMAIC · DEFINE — Voice of the Customer; VOC to CTQ translation; the project charter; problem and goal statements; scope; SIPOC; process mapping levels and symbols"+sl("Define")),
-    ("15:00","15:15",15,"break","Tea break"),
+    ("15:00","15:15",15,"break","Tea break (within training time)"),
     ("15:15","18:00",165,"lab","Hands-on (core): "+lab_titles([2,3,5])+". Elective (time permitting): "+lab_titles([4,11])+sll([2,3,4,5,11])),
     ("18:00","18:30",30,"recap","Day 1 recap, Q&A and PM digital attendance"),
  ]),
  2: ("Measure, Analyse, Improve, Control and assessment", [
     ("9:30","9:45",15,"recap","Day 1 recap and mandatory digital attendance (AM)"),
     ("9:45","11:00",75,"topic","DMAIC · MEASURE — the eight wastes (DOWNTIME); value-added analysis; types of data; data collection plans and operational definitions; check sheets; sampling; yield, DPU, DPO, DPMO; sigma level; COPQ"+sl("Measure")),
-    ("11:00","11:15",15,"break","Tea break"),
+    ("11:00","11:15",15,"break","Tea break (within training time)"),
     ("11:15","12:30",75,"lab","Hands-on (core): "+lab_titles([6])+". Elective (time permitting): "+lab_titles([12])+sll([6,12])),
     ("12:30","13:30",60,"lunch","Lunch break"),
     ("13:30","14:15",45,"topic","DMAIC · ANALYZE — common vs special cause variation; Pareto principle and charts; run charts and pattern rules; 5 Whys; Fishbone (5M); brainstorming and multi-voting; the interactive problem-solving toolkit"+sl("Analyze")),
     ("14:15","15:00",45,"lab","Hands-on (core): "+lab_titles([7,8])+" using the collaborative Pareto, 5 Whys, Fishbone and NovaSPC tools"+sll([7,8])),
-    ("15:00","15:15",15,"break","Tea break"),
+    ("15:00","15:15",15,"break","Tea break (within training time)"),
     ("15:15","15:30",15,"topic","DMAIC · IMPROVE — solution generation and selection; 5S; poka-yoke; standard work; Kaizen; piloting"+sl("Improve")+". Hands-on (core): "+lab_titles([9])+". Elective: "+lab_titles([13])+sll([9,13])),
     ("15:30","15:45",15,"topic","DMAIC · CONTROL — control plans; process control; visual management; SOPs; team huddles; Gemba; A3 and handover"+sl("Control")+". Hands-on (core): "+lab_titles([10])+". Elective: "+lab_titles([14])+sll([10,14])),
     ("15:45","16:00",15,"assess","Course recap and Briefing for Assessment"+sl("Wrap-up")),
@@ -169,6 +169,7 @@ prodoc.add_version_control(doc,[
   "NovaSPC) integrated into the Analyze labs; slide references added to the schedule.",C.TRAINER),
  ("5", C.VERSION_DATE, "Integrated the SIPOC & Process Map Builder (alfredang.github.io/sipoc/) into Lab 3 and elective Lab 12, with a tool walkthrough added to the Define phase and the online toolkit slide updated to list all five tools.", C.TRAINER),
  ("6", C.VERSION_DATE, "Fixed clipped headings: slide titles now auto-fit to a single line so long lab titles can no longer overprint the LAB/ELECTIVE chips beneath them.", C.TRAINER),
+ ("7", C.VERSION_DATE, "Table of contents restored to a live, updatable Word field (previously flattened to static text), so it refreshes on open or F9 while still rendering correctly in the distributed PDF.", C.TRAINER),
 ])
 prodoc.add_toc(doc)
 
@@ -227,7 +228,7 @@ for day,(theme,rows) in SCHEDULE.items():
     # widths
     for row in tbl.rows:
         row.cells[0].width=Inches(1.15); row.cells[1].width=Inches(0.9); row.cells[2].width=Inches(4.75)
-    p=doc.add_paragraph(); r=p.add_run(f"Total training time: {training} minutes ({training//60} hours)."); r.italic=True; r.font.size=Pt(9.5); r.font.color.rgb=GREY
+    p=doc.add_paragraph(); r=p.add_run(f"Total training time: {training} minutes ({training//60} hours) — includes tea breaks, excludes the 1-hour lunch."); r.italic=True; r.font.size=Pt(9.5); r.font.color.rgb=GREY
     assert training==480, f"Day {day} training minutes = {training}, expected 480"
 
 H("Lab Reference (aligned to the DMAIC phases)",1)

@@ -1,6 +1,6 @@
 # Labs — Certified Lean Six Sigma Yellow Belt (CLSSYB) Training
 
-**WSQ Course Code:** TGS-2025053922  |  **Version v6 · 20 July 2026**
+**WSQ Course Code:** TGS-2025053922  |  **Version v7 · 20 July 2026**
 
 These labs follow the DMAIC roadmap end to end. Every lab builds on the same Contoso Service Desk scenario, so your outputs accumulate into one complete improvement package.
 
